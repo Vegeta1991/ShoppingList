@@ -1,4 +1,27 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const input = document.getElementById("input");
 
-// Write your JavaScript code.
+const buttonAdd = document.getElementById("add-button");
+
+const buttonRemove = document.getElementById("remove-button");
+
+const list = document.getElementById("list");
+
+buttonAdd.addEventListener("click", function () {
+
+    const value = input.value;
+    const li = document.createElement("li");
+    li.textContent = value;
+    list.appendChild(li);
+    input.value = "";
+
+
+});
+buttonRemove.addEventListener("click", function () {
+    const items = list.getElementsByTagName("li");  
+    if (items.length > 0) {
+        list.removeChild(items[items.length - 1]);
+    }
+});
+
+
+

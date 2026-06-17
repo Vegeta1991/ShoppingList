@@ -1,5 +1,5 @@
 ﻿{
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=C:\\Users\\KAS\\source\\repos\\ShoppingList\\ShoppingList.db"
+    "DefaultConnection": "Data Source=ShoppingList.db"
   }
 }
