@@ -1,24 +1,26 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping List</title>
     <link rel="stylesheet" href="css/site.css">
 </head>
-
-<body class="main-page">
+<body>
 
     <div class="container">
-        <h1 class="h1">My List</h1>
+        <h1>My Shopping List</h1>
+
+        <div class="add-section">
+            <input id="input" type="text" placeholder="Add item...">
+            <button id="add-button">Add</button>
+            <button id="remove-button">Delete</button>
+        </div>
+
         <ul id="list"></ul>
+        
     </div>
 
-    <div class="add-section">
-        <input id="input" type="text" placeholder="Add item..." />
-        <button id="add-button">Add</button>
-        <button id="remove-button">Delate</button>
-    </div>
-
-    <script src="js/site.js"></script>
+    <script src="/js/site.js"></script>
 </body>
 </html>

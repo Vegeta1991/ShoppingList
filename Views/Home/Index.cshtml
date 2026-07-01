@@ -1,8 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Shopping List";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <h1>My Shopping List</h1>
+
+    <div class="add-section">
+        <input id="input" type="text" placeholder="Add item..." />
+        <button id="add-button">Add</button>
+        <button id="remove-button">Delete</button>
+    </div>
+
+    <ul id="list"></ul>
 </div>
+
+@section Scripts {
+    <script src="~/js/site.js?v=999"></script>
+}
