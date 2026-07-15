@@ -70,17 +70,31 @@ ul {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.2s;
+    position: relative;
 }
-
-    .item:hover {
-        background-color: #e5e5e5;
-    }
-
-    .item.selected {
+.item:hover {
+    background-color: #e5e5e5;
+}
+.item.selected {
         background-color: #cce5ff;
         border-left: 5px solid #007bff;
-    }
+}
 
-        .item.selected:hover {
-            background-color: #cce5ff;
-        }
+.item.selected:hover {
+        background-color: #cce5ff;
+}
+.edit-button {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.edit-button:hover {
+    display: block;
+}
+
+
+.selected {
+    background-color: lightblue;
+}
