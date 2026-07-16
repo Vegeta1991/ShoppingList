@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Shopping List</title>
+
     <link rel="stylesheet" href="css/site.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-   <div class="container">
-    <h1>My Shopping List</h1>
+    <div class="container">
+        <h1>My Shopping List</h1>
+        
+        <p style="font-size: 40px; color: black;">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-trash"></i>
+            <i class="fa-solid fa-pen"></i>
+        </p>
+        <div class="add-section">
+            <input id="input" type="text" placeholder="Add item...">
 
-    <div class="add-section">
-        <input id="input" type="text" placeholder="Add item...">
+            <button id="add-button" type="button" aria-label="Add item">
+                <i class="bi bi-plus-lg"></i>
+            </button>
 
-        <button id="add-button" type="button">Add</button>
-        <button id="remove-button" type="button">Delete</button>
-        <button id="edit-button" type="button">Edit</button>
+            <button id="remove-button" type="button" aria-label="Delete item">
+                <i class="bi bi-trash"></i>
+            </button>
+
+            <button id="edit-button" type="button" aria-label="Edit item">
+                <i class="bi bi-pencil"></i>
+            </button>
+
+        </div>
+
+        <ul id="list"></ul>
     </div>
 
-    <ul id="list"></ul>
-</div>
-
-<script src="js/site.js"></script>
+   
+    <script src="/js/site.js"></script>
 </body>
 </html>

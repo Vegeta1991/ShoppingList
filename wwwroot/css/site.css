@@ -32,24 +32,39 @@ h1 {
     margin-bottom: 20px;
 }
 
-input {
+#input {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
+    min-width: 0;
 }
 
 button {
-    padding: 10px 14px;
+    width: 45px;
+    height: 45px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
+    button i {
+        font-size: 22px;
+    }
+
+    button:hover {
+        transform: scale(1.08);
+        opacity: 0.9;
+    }
+
 #add-button {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
 }
 
@@ -58,48 +73,60 @@ button {
     color: white;
 }
 
+#edit-button {
+    background-color: #ff9800;
+    color: white;
+}
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background-color: #f0f0f0;
     padding: 12px;
     margin-top: 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.2s;
-    position: relative;
 }
-.item:hover {
-    background-color: #e5e5e5;
-}
-.item.selected {
+
+    .item:hover {
+        background-color: #e5e5e5;
+    }
+
+    .item.selected {
         background-color: #cce5ff;
         border-left: 5px solid #007bff;
-}
+    }
 
-.item.selected:hover {
-        background-color: #cce5ff;
-}
-.edit-button {
-    display: none;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.edit-button:hover {
-    display: block;
-}
+        .item.selected:hover {
+            background-color: #cce5ff;
+        }
 
 
-.selected {
-    background-color: lightblue;
+.checkbox {
+    width: 18px;
+    height: 18px;
+    flex: none;
+    cursor: pointer;
 }
-.bought{
-        text-decoration: line-through;
+
+.product-name {
+    flex: 1;
+}
+
+.bought {
+    text-decoration: line-through;
     color: gray;
-}   
+}
+.fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    display: inline-block;
 }
